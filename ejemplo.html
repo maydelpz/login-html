@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejemplo.css">
+</head>
+<body>
+    <div class= "login-container">
+        <form action="">
+            <div class="inner-container"> 
+            <label for="username">Username</label>
+            <input id= "username" type="text">
+            </div>
+            <div class="inner-container">
+            <label for="password">Password</label> 
+            <input id="password" type="password">
+            <button onclick="login()">Login</button>
+            </div>
+           
+        </form>
+
+    </div>
+</body>
+<script>
+    function login(){
+        event.preventDefault();
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        
+        if(username === "maybe" && password === "12345"){
+            alert("Bienvenido");
+        }else{
+            alert("Credenciales incorrectas");
+        }
+
+    }
+</script>
+</html>
